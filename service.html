@@ -1,0 +1,367 @@
+<html>
+   <head>
+      <title>Leospa</title> 
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <style>
+       .navbar-nav{
+         padding: 0px;margin-top: 50px;  
+       }
+       .nava{
+           color: black;
+           font-weight: 500;
+           font-size: 14px;
+           font-family: sans-serif;
+          margin-right: 9px;
+       }
+       .nava:hover{
+           color: #ff817e;
+       }
+       .spa-img{
+           top: 0;
+           right: 0;
+           width: 43.4%;
+           position: absolute;
+       }
+       .spa{
+           width: 100%;
+           float: right;
+           display: block;    
+       }
+       .leaf-img{
+           top: 45%;
+           left: -39;
+           width: 16%;
+           position: absolute;        
+       }
+       .leaf{
+           width: 100%;
+           
+       }
+       .snp{
+           color: #ff817e;
+           font-family: rufina;
+           text-transform: uppercase;
+           letter-spacing: 1.5px;
+           margin-bottom: 20px;
+       }
+       .bns h2{
+           font-size: 60px;
+           font-family: 'Rufina', serif;
+           font-weight: 550;
+               color: #1e2528;
+               line-height: 75px;             
+       }
+       .btn{
+           background-color: #ff817e;
+           color: white;
+           border-radius: 0px;
+           padding-top: 16px;
+           padding-bottom: 16px;
+           padding-left: 25px;
+           padding-right: 25px;
+           letter-spacing: 0.5px;
+           font-size: 15px;
+           
+       }
+       .btn1{
+           margin-left: 15px;
+           color: #1e2528;
+           background-color: white;
+       }
+       .btn1:hover{
+            color: #ff817e;
+           margin-left: 16px;
+           
+       }
+       .china{
+           position: absolute;
+           left: 200;
+       }
+       .btn2{
+           border-radius: 40px;
+           margin: 50px;
+           padding-left: 30px;
+           padding-right: 30px;   
+       }
+       
+       .post{
+           border: 1px solid #e3e6ea;
+    text-align: center;
+           padding: 19px;
+       }
+       .post:hover{
+           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+           transition: 0.3s;
+       }
+       .post:hover > .btnrm {
+              color: white;
+               background-color: #ff817e;
+           transition: 0.3s;
+       }
+       .btnrm{
+           border-radius: 50px;
+           padding-top: 15px;
+           padding-bottom: 15px;
+           background-color: #30383b;
+           margin-bottom: 30px;
+       }
+       .btnrm:hover{
+               color: white;
+               background-color: #ff817e; 
+                transition: 0.3s;
+           }
+       .carousel-control.left{
+           background: none;
+       }
+          .carousel-control.right{
+           background: none;
+       }
+       .team{
+           width: 100%;
+           height: auto;
+       }
+       .shift{
+           text-align: center; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+           background-color: #fff; 
+           padding: 30px; 
+           margin: -50px auto 0; 
+           width: 85%; 
+           position: relative;
+       }
+       .shift i{
+           font-size: 0;
+           padding: 0;
+           margin-left: 5px;
+           margin-right: 5px;
+           border-radius: 60px;
+           visibility: hidden;
+ 
+       }
+       .s1:hover > i{
+           visibility: visible;
+           font-size: 17;
+           padding: 8px;
+           border: 1px solid white;
+           transition: 0.3s;  
+       }
+       .s112:hover .s1 > i{
+           visibility: visible;
+           font-size: 17;
+           padding: 10px;
+           border: 1px solid white;
+           transition: 0.3s;  
+       }
+       .s112:hover .s112 > .s1{
+         margin-top: -100 auto 0; 
+           position: relative;
+       }
+       i:hover{
+           border: 1px solid #ff817e;
+           background-color:  #ff817e;
+           color: white;
+           transition: 0.3s;  
+       }
+       .col-sm-7 form{
+           margin-top: 60px;
+           margin-left: 30px;
+       }
+       .ip{
+           width: 40%;
+           margin: 7px;
+           background: #fff9f8;
+           border: none;
+            border-bottom: 1px solid silver;
+           padding: 15px;
+           font-size: 14px;
+           margin-bottom: 20;   
+       }
+    ::placeholder{
+          font-size: 12px; 
+       }
+       .git{
+           background-color: #ff817e;
+           padding: 17px;
+           color: white;
+           border-radius: 30px;
+           margin-left: 100;
+           margin-right: 20;
+       }
+       .gitl{
+           color: gray; 
+       }
+       .gitl:hover{
+           color: #ff817e;
+           transition: 0.3s;
+       }
+       .gitf{
+           border: 1px solid silver;
+           width: 80%;
+           padding: 13px;
+           margin: 10px;
+       }
+       .footermenu a{
+           color: darkslategray;
+           font-weight: bold;
+           margin: 25px;
+       }
+          .footermenu a:hover{
+           color: #ff817e;
+              transition: 0.4s;
+       }
+       .footeri i{
+           margin: 10px;
+           font-size: 17px;
+       }
+        .footeri i:hover{
+          background-color: white;
+            color: #ff817e;
+          transition: 0.3s;  
+            border: none;
+       }
+       .ovr{
+           opacity: ;
+           background-color: #ff817e;
+             height: 100%;
+           width: 100%;
+           position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+           opacity: 0;
+           
+       }
+       .ovr:hover{
+           opacity: 0.85;
+           transition: 0.3s;
+       }
+   
+       
+    </style>
+   </head>  
+<body>
+     <header>
+         <div class="container">
+            <div class="row aligned-items-end">
+             <div class="col-sm-3">
+                 <a href="#"><img src="images/logo.png"></a>
+             </div>
+             <div class="col-sm-9" >
+                <nav class="primary-menu">
+                    <ul class="nav navbar-nav" >
+                        <li><a class="nava" href="home.html">HOME</a></li>
+                        <li><a class="nava" href="about.html">ABOUT</a></li>
+                        <li><a class="nava" href="#">FEATURE</a></li>
+                        <li><a class="nava" href="service.html">SERVICE</a></li>
+                        <li><a class="nava" href="contact.html">CONTACT</a></li>
+                    </ul>
+                </nav>
+             </div>
+         </div>
+        </div>
+     </header>
+
+ 
+  
+  
+
+
+ 
+
+<div class="container" style="text-align: center; margin-top: 30px; margin-bottom: 80px; ">
+ 
+      <h2 style="font-size: 43px;
+           font-family: 'Rufina', serif;
+               color: #1e2528;
+               line-height: 65px; margin-bottom: 35px;   ">
+          Popular Procedures
+      </h2>
+      <center><p style="font-size: 16px; width: 60%; color: gray; margin-bottom: 50px;">To doesn't his appear replenish together called he of mad place won't wherein blessed second every wherein were meat kind wherein and martcin</p></center>
+  
+  <div class="row">
+      <div class="col-sm-4">
+          <article class="post">
+             <img src="images/1%20(1).jpg" style="width: 100%; height: auto; display: block;">
+             <h4 style="margin-top: 30px;margin-bottom: 30px;">
+                <a style="color: #263a41;
+    font-size: 22px; font-weight: bold; font-family: rufina;">Massage Therapy</a> 
+             </h4>
+            <p style="font-size: 14px; color: gray; margin-bottom: 50px; margin-left: 18px; margin-right: 18px;">Living winged said you darkness you're divide gathered and bring one seasons face great dr Waters firmament place which.</p> 
+            <a href="#" class="btn btnrm"><b>READ MORE</b></a> 
+          </article>
+      </div>
+      <div class="col-sm-4">
+          <article class="post">
+             <img src="images/2%20(1).jpg" style="width: 100%; height: auto; display: block;">
+             <h4 style="margin-top: 30px;margin-bottom: 30px;">
+                <a style="color: #263a41;
+    font-size: 22px; font-weight: bold; font-family: rufina;">Beauty Care</a> 
+             </h4>
+            <p style="font-size: 14px; color: gray; margin-bottom: 50px; margin-left: 18px; margin-right: 18px;">Living winged said you darkness you're divide gathered and bring one seasons face great dr Waters firmament place which.</p> 
+            <a href="#" class="btn btnrm"><b>READ MORE</b></a> 
+              
+          </article>
+      </div>
+      <div class="col-sm-4">
+          <article class="post">
+             <img src="images/3%20(1).jpg" style="width: 100%; height: auto; display: block;">
+             <h4 style="margin-top: 30px;margin-bottom: 30px;">
+                <a style="color: #263a41;
+    font-size: 22px; font-weight: bold; font-family: rufina;">Executive Reflexology</a> 
+             </h4>
+            <p style="font-size: 14px; color: gray; margin-bottom: 50px; margin-left: 18px; margin-right: 18px;">Living winged said you darkness you're divide gathered and bring one seasons face great dr Waters firmament place which.</p> 
+            <a href="#" class="btn btnrm"><b>READ MORE</b></a> 
+              
+          </article>
+      </div>
+  </div>   
+</div>
+   
+   
+   
+ 
+   
+   <div class="container-fluid" style="background-color: #fff9f8; margin-top: 120px; padding-left: 0;">
+       <div class="row">
+           <div class="col-sm-5"><img style="width: 100%; height: auto;" src="images/appointment-img.jpg"></div>
+           <div class="col-sm-7">
+               <form action="">
+                   <input type="text" required placeholder="NAME" class="ip">
+                   <input type="text" required placeholder="EMAIL ADDRESS" class="ip">
+                   <input type="text" required placeholder="SELECT SERVICE" class="ip">
+                   <input type="text" required placeholder="PHONE NUMBER" class="ip">
+                   <input type="date" required  class="ip">
+                   <input type="time" required  class="ip">
+                   <textarea placeholder="YOUR NOTES" class="ip" style="width: 83%;"></textarea>
+                   <a href="#" class="btn" style="font-weight: bold; border-radius: 50px;">MAKE AN APPOINTMENT</a>
+               </form>
+           </div>
+       </div>
+   </div>
+   
+   <div class="container-fluid" style="background-color: #fff9f8; margin-top: 120px; text-align: center;">
+     <br> <br> <br> <br>
+      <img src="images/logo.png">
+      <br><br><br>
+      <div class="footermenu">
+          <a href="#">HOME</a>
+          <a href="#">ABOUT</a>
+          <a href="#">FEATURE</a>
+          <a href="#">SERVICE</a>
+          <a href="#">CONTACT</a>
+      </div><br><br>
+         <div class="footeri">
+             <i class="fa fa-facebook"></i><i class="fa fa-twitter"></i><i class="fa fa-google-plus"></i><i class="fa fa-instagram"></i>
+         </div><br>
+         <p style="color: gray; font-size: 12;">© COPYRIGHT 2019. ALL RIGHTS RESERVED.</p>
+    </div>  
+      
+       <footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </footer> 
+    </body>
+</html>
